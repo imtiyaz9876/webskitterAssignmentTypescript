@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import Category, { ICategory } from '../Models/categoryModel';
-// import asyncErrorHandler from '../../utils/asyncErrorHandler';
+
 import CustomError from '../Helper/error';
 
 
@@ -30,7 +30,7 @@ export const createCategory =
 
   export const getAllCategory = 
   async (_req: Request, res: Response, next: NextFunction) => {
-    const categories = await Category.find();
+    const categories = await Category.find({});
 
     if (!categories.length) {
       return next(new CustomError('No categories found', 404));

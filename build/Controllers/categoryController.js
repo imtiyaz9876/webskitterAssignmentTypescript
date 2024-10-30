@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllCategory = exports.createCategory = void 0;
 const categoryModel_1 = __importDefault(require("../Models/categoryModel"));
-// import asyncErrorHandler from '../../utils/asyncErrorHandler';
 const error_1 = __importDefault(require("../Helper/error"));
 const createCategory = async (req, res, next) => {
     const categoryData = req.body;
@@ -26,7 +25,7 @@ const createCategory = async (req, res, next) => {
 };
 exports.createCategory = createCategory;
 const getAllCategory = async (_req, res, next) => {
-    const categories = await categoryModel_1.default.find();
+    const categories = await categoryModel_1.default.find({});
     if (!categories.length) {
         return next(new error_1.default('No categories found', 404));
     }

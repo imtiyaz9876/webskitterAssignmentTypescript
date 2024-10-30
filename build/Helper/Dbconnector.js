@@ -7,7 +7,11 @@ const mongoose_1 = __importDefault(require("mongoose"));
 exports.default = (database) => {
     const connect = () => {
         mongoose_1.default
-            .connect(database, { useNewUrlParser: true, useUnifiedTopology: true })
+            .connect(database, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            useFindAndModify: false,
+        })
             .then(() => console.log(`Database connection successful.....`))
             .catch((error) => {
             console.log("Unable to connect to the db: " + error.message);
