@@ -26,8 +26,9 @@ The database consists of the following collections:
    ## Setup Instructions
  **Clone the Repository**
  
-   git clone git@github.com:imtiyaz9876/webskitterAssignmentTypescript.git
-   cd repo-name
-   npm install
-   npm start
-   postmanCollectionLink=https://documenter.getpostman.com/view/30345969/2sAY4vghY6
+ #  git clone git@github.com:imtiyaz9876/webskitterAssignmentTypescript.git
+
+  # cd repo-name
+  # npm install
+  # npm start
+  # postmanCollectionLink=https://documenter.getpostman.com/view/30345969/2sAY4vghY6
