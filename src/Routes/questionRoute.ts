@@ -12,11 +12,11 @@ question_route.use(express.static(path.resolve(__dirname, "../public"))); // Use
 
 // Multer configuration for image upload
 const storage = multer.diskStorage({
-    destination: function (_req, _file, cb) {  // Prefix unused variables with underscore
-      const destPath = path.resolve(__dirname, "../public/userImages");
+    destination: function (_req, _file, cb) {  
+      const destPath = path.resolve(__dirname, "../public/question");
       cb(null, destPath);
     },
-    filename: function (_req, file, cb) {  // Prefix unused 'req' with underscore
+    filename: function (_req, file, cb) {  
       const name = Date.now() + "_" + file.originalname;
       cb(null, name);
     },

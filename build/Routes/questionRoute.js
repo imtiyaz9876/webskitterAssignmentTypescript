@@ -15,7 +15,7 @@ question_route.use(express_1.default.static(path_1.default.resolve(__dirname, ".
 // Multer configuration for image upload
 const storage = multer_1.default.diskStorage({
     destination: function (_req, _file, cb) {
-        const destPath = path_1.default.resolve(__dirname, "../public/userImages");
+        const destPath = path_1.default.resolve(__dirname, "../public/question");
         cb(null, destPath);
     },
     filename: function (_req, file, cb) {
