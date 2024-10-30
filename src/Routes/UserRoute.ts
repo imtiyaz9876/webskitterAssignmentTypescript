@@ -21,7 +21,7 @@ user_route.use(passport.initialize());
 
 // Multer configuration for image upload
 const storage = multer.diskStorage({
-  destination: function (_req, _file, cb) {  // Prefix unused variables with underscore
+  destination: function (_req, _file, cb) {  
     const destPath = path.resolve(__dirname, "../public/userImages");
     cb(null, destPath);
   },
