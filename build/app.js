@@ -52,7 +52,7 @@ const server_port = process.env.SERVER_PORT ?? "";
 // Rate limiting middleware
 const limiter = (0, express_rate_limit_1.default)({
     windowMs: 10 * 60 * 1000,
-    max: 3,
+    max: 300,
     message: "Too many request so please wait some time",
 });
 // Apply the rate limiting middleware to all requests

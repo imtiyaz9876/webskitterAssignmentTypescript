@@ -13,7 +13,7 @@ const user_route = express();
 // Middleware setup
 user_route.use(bodyParser.urlencoded({ extended: true }));
 user_route.use(bodyParser.json());
-user_route.use(express.static(path.resolve(__dirname, "../public/userImages"))); // Resolve for static files
+user_route.use(express.static("public"));
 
 
 user_route.use(passport.initialize());

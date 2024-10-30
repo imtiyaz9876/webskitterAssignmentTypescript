@@ -15,7 +15,7 @@ const user_route = (0, express_1.default)();
 // Middleware setup
 user_route.use(body_parser_1.default.urlencoded({ extended: true }));
 user_route.use(body_parser_1.default.json());
-user_route.use(express_1.default.static(path_1.default.resolve(__dirname, "../public/userImages"))); // Resolve for static files
+user_route.use(express_1.default.static("public"));
 user_route.use(passport_1.default.initialize());
 // user_route.use(passport.session());
 // Multer configuration for image upload

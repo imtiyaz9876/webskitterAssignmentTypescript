@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/app.js",
   "scripts": {
-    "build": "tsc && ncp src/public build/public",
+    "build": "tsc",
     "start": "npm run build && nodemon build/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

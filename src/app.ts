@@ -31,7 +31,7 @@ connectorDb(dbConnectionString);
 // Rate limiting middleware
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000, 
-  max: 3, 
+  max: 300, 
   message: "Too many request so please wait some time",
 });
 
