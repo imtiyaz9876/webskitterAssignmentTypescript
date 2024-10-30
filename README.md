@@ -26,7 +26,7 @@ The database consists of the following collections:
    ## Setup Instructions
  **Clone the Repository**
  
- #  git clone git@github.com:imtiyaz9876/webskitterAssignmentTypescript.git
+   git clone https://github.com/imtiyaz9876/webskitterAssignmentTypescript.git
 
   # cd repo-name
   # npm install
